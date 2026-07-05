@@ -1,0 +1,64 @@
+# CareerGram Application Configuration
+app:
+  name: "CareerGram"
+  version: "2.0.0"
+  description: "Professional Social Network - LinkedIn Clone"
+  author: "Rishi"
+  
+supabase:
+  # Replace these with your actual Supabase credentials
+  url: "https://your-project.supabase.co"
+  anon_key: "your-anon-key-here"
+  
+features:
+  enabled:
+    - auth
+    - posts
+    - comments
+    - stories
+    - chat
+    - video_calls
+    - jobs
+    - notifications
+  
+  realtime:
+    enabled: true
+    channels:
+      - posts
+      - comments
+      - notifications
+      - stories
+      - connections
+      - messages
+
+account_types:
+  jobseeker:
+    name: "Job Seeker"
+    badge: "badge-jobseeker"
+    icon: "👤"
+  recruiter:
+    name: "Recruiter"
+    badge: "badge-recruiter"
+    icon: "💼"
+  creator:
+    name: "Creator"
+    badge: "badge-creator"
+    icon: "⭐"
+
+security:
+  xss_protection: true
+  html_escape: true
+  max_upload_size_mb: 10
+  image_compression: true
+  password_min_length: 6
+
+ui:
+  theme: "auto"
+  animations: true
+  auto_refresh_interval_seconds: 60
+  max_posts_per_load: 50
+  
+pwa:
+  enabled: true
+  offline_support: true
+  install_prompt: true
