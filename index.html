@@ -66,47 +66,83 @@ body.light .ci-info .ci-last{color:#64748b!important;}
 /* Bottom bar buttons */
 body.light .bb-btn .bbl{color:#64748b;}
 body.light .bb-btn.active .bbl{color:var(--accent2);}
+/* Profile */
+body.light .prof-card{background:#fff;border-color:rgba(99,102,241,0.15);}
+body.light .prof-card h2{color:#0f172a;}
+body.light .prof-role{color:var(--accent2);}
+body.light .prof-meta{color:#64748b;}
+body.light .prof-bio{color:#475569;}
+body.light .stat-val{color:#0f172a;}
+body.light .prof-section{background:#fff;}
+body.light .prof-section h4{color:#0f172a;}
+/* Skills */
+body.light .skill-tag{background:rgba(99,102,241,0.08);border-color:rgba(99,102,241,0.2);color:var(--accent);}
+/* People rows */
+body.light .people-row{background:#fff;border-color:rgba(99,102,241,0.15);}
+body.light .people-row .info .name{color:#0f172a;}
+body.light .people-row .info .sub{color:#64748b;}
+/* Reels */
+body.light .reels-catbar{background:rgba(241,245,249,0.97)!important;}
+body.light .cat-btn{background:#fff;color:#475569;border-color:rgba(99,102,241,0.2);}
+body.light .reel-card{background:#fff;border-color:rgba(99,102,241,0.15);}
+body.light .reel-info .r-title{color:#1e293b;}
+body.light .reel-info .r-author span,body.light .reel-info .r-views{color:#64748b;}
+/* Feed create box */
+body.light .cpb-input{background:#f8fafc;color:#64748b;border-color:rgba(99,102,241,0.2);}
+body.light .cpb-tags span{background:rgba(99,102,241,0.07);color:var(--accent);}
+/* Job cards */
+body.light .filter-chip{background:#fff;border-color:rgba(99,102,241,0.2);color:#475569;}
+body.light .filter-chip.active{background:rgba(99,102,241,0.1);color:var(--accent);}
+/* Comment bubble */
+body.light .cbubble{background:#f8fafc;border-color:rgba(99,102,241,0.12);}
+body.light .cbubble .cname{color:#0f172a!important;}
+body.light .comment-input-row input{background:#f8fafc;border-color:rgba(99,102,241,0.2);color:#1e293b;}
+/* Section title */
+body.light .sec-title{color:#475569;}
+/* Profile banners and raised backgrounds */
+body.light .bg-raised,body.light [style*="rgba(30,27,75"]{background:rgba(241,245,249,1)!important;}
+/* Connections section */
+body.light .conn-tabs button{color:#475569;}
+body.light .conn-tabs button.active{background:var(--accent);color:#fff;}
+/* Notifications */
+body.light .notif-panel{background:#fff;border-color:rgba(99,102,241,0.15);}
+body.light .ni-text{color:#334155;}
+body.light .ni-time{color:#64748b;}
+body.light .notif-hdr h4{color:#0f172a;}
+/* Login screen stays dark */
+body.light #login-screen{background:linear-gradient(135deg,#0f172a,#1e1b4b,#0f172a)!important;}
+/* Story rows */
+body.light .story-name{color:#334155;}
+/* Reels catbar sticky */
+body.light #reels-screen [style*="rgba(15,23,42"]{background:rgba(241,245,249,0.97)!important;color:#1e293b!important;}
+body.light .playlist-card{background:rgba(99,102,241,0.07);border-color:rgba(99,102,241,0.2);}
+body.light .story-ring.active{box-shadow:none;}
+body.light #home-screen .card{background:#fff;}
+body.light .cpb-input{color:#1e293b;}
+body.light #feedContainer .card{background:#fff;}
 /* Bottom nav active indicator */
 body.light .bb-btn.active::before{background:linear-gradient(90deg,var(--accent),var(--accent2));}
 /* Chat input */
 body.light .chat-input-bar{background:rgba(255,255,255,0.97);border-top-color:rgba(99,102,241,0.15);}
 body.light .chat-input-bar input{background:#f1f5f9;border-color:rgba(99,102,241,0.2);color:#1e293b;}
-
 /* Inline hardcoded dark backgrounds in feed */
-
 body.light .comments-panel{background:rgba(241,245,249,0.8);}
-
 body.light .post-actions{border-top-color:rgba(99,102,241,0.1);}
-
 /* Edit modal */
-
 body.light .em-card{background:#fff;}
-
 body.light .em-header h3{color:#0f172a;}
-
 body.light .em-section label{color:#475569;}
-
 body.light .em-section input,body.light .em-section textarea,body.light .em-section select{background:#f8fafc;border-color:rgba(99,102,241,0.2);color:#1e293b;}
-
 /* Chat window */
-
 body.light #chat-window{background:#f1f5f9;}
-
 body.light .chat-msgs{background:rgba(241,245,249,0.5);}
-
 body.light .msg-row:not(.me) .bubble{background:#fff;border-color:rgba(99,102,241,0.18);color:#1e293b;}
-
 body.light .msg-row:not(.me) .bubble .btime{color:#64748b;}
-
 /* Settings toggles */
-
 body.light .settings-toggle{background:#e2e8f0;}
-
 body.light [style*="color:#fff"][style*="font-size:14px"]{color:#1e293b!important;}
-
 /* Profile completion card */
 body.light [style*="rgba(99,102,241,.08)"]{background:rgba(99,102,241,0.05)!important;}
-
 /* Generic white text fix for light mode */
 body.light h2,body.light h3{color:#0f172a;}
 body.light p{color:#475569;}
@@ -504,6 +540,10 @@ body.light .ni.unread{background:rgba(99,102,241,.08);}
 .theme-toggle{position:relative;width:52px;height:28px;background:var(--card);border:1px solid var(--border);border-radius:14px;cursor:pointer;display:flex;align-items:center;padding:0 4px;transition:all .3s;}
 .toggle-thumb{width:22px;height:22px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2));transition:transform .3s;display:flex;align-items:center;justify-content:center;font-size:12px;}
 .theme-toggle.light .toggle-thumb{transform:translateX(24px);background:linear-gradient(135deg,#f59e0b,#fbbf24);}
+.theme-swatch{width:34px;height:34px;border-radius:12px;border:2px solid transparent;cursor:pointer;box-shadow:0 6px 18px rgba(15,23,42,.12);transition:transform .2s,border-color .2s;}
+.theme-swatch:hover{transform:scale(1.05);}
+.theme-swatch.active{border-color:var(--bright);}
+body.light .theme-swatch.active{border-color:var(--text2);}
 @keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 .fade-in{animation:fadeIn .25s ease;}
 .profile-pic-wrapper{position:relative;display:inline-block;}
@@ -529,6 +569,15 @@ function _getActiveKey(){
   return localStorage.getItem('cg_sb_key_override') || SUPABASE_KEY_DEFAULT;
 }
 const SUPABASE_KEY = _getActiveKey();
+const OPENAI_KEY_DEFAULT = '';
+function _getOpenAIKey(){
+  return localStorage.getItem('cg_ai_key_override') || OPENAI_KEY_DEFAULT;
+}
+function isOpenAIKeyValid(){
+  const key = _getOpenAIKey();
+  return typeof key === 'string' && key.startsWith('sk-');
+}
+window._aiKeyValid = isOpenAIKeyValid();
 
 // FIX DataCloneError: custom fetch wrapper prevents Headers object postMessage clash
 const _safeFetch = (...args) => fetch(...args);
@@ -563,7 +612,11 @@ window._sbConnected = false; // true only after a successful network check
       window._sbConnected = true;
       console.log('CareerGram: Supabase connected ✅');
     }
-  } catch(e) { /* network error — will retry on login */ }
+  } catch(e) {
+    console.warn('CareerGram: Supabase network unavailable. Falling back to local-only mode.', e);
+    window._sbConnected = false;
+    window._sbKeyValid = false;
+  }
 })();
 </script>
 </head>
@@ -1164,6 +1217,23 @@ window._sbConnected = false; // true only after a successful network check
       </div>
     </div>
 
+    <div class="card prof-section" style="margin-bottom:14px;">
+      <h4>🎨 Accent Color</h4>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;">
+        <button class="theme-swatch" data-theme="blue" onclick="setThemeAccent('blue')" style="background:linear-gradient(135deg,#6366f1,#818cf8);"></button>
+        <button class="theme-swatch" data-theme="violet" onclick="setThemeAccent('violet')" style="background:linear-gradient(135deg,#7c3aed,#a78bfa);"></button>
+        <button class="theme-swatch" data-theme="pink" onclick="setThemeAccent('pink')" style="background:linear-gradient(135deg,#ec4899,#f472b6);"></button>
+        <button class="theme-swatch" data-theme="teal" onclick="setThemeAccent('teal')" style="background:linear-gradient(135deg,#14b8a6,#2dd4bf);"></button>
+        <button class="theme-swatch" data-theme="emerald" onclick="setThemeAccent('emerald')" style="background:linear-gradient(135deg,#22c55e,#4ade80);"></button>
+        <button class="theme-swatch" data-theme="amber" onclick="setThemeAccent('amber')" style="background:linear-gradient(135deg,#f59e0b,#fbbf24);"></button>
+        <button class="theme-swatch" data-theme="red" onclick="setThemeAccent('red')" style="background:linear-gradient(135deg,#ef4444,#fb7185);"></button>
+        <button class="theme-swatch" data-theme="indigo" onclick="setThemeAccent('indigo')" style="background:linear-gradient(135deg,#4338ca,#6366f1);"></button>
+        <button class="theme-swatch" data-theme="cyan" onclick="setThemeAccent('cyan')" style="background:linear-gradient(135deg,#06b6d4,#22d3ee);"></button>
+        <button class="theme-swatch" data-theme="orange" onclick="setThemeAccent('orange')" style="background:linear-gradient(135deg,#f97316,#fb923c);"></button>
+      </div>
+      <div id="themePaletteStatus" style="margin-top:10px;font-size:12px;color:var(--text2);">Choose the accent color you like best.</div>
+    </div>
+
     <!-- Notifications Settings -->
     <div class="card prof-section" style="margin-bottom:14px;">
       <h4>🔔 Notifications</h4>
@@ -1224,6 +1294,7 @@ window._sbConnected = false; // true only after a successful network check
         <div>Account Type: <span style="color:var(--accent2);" id="settingsAccType"></span></div>
         <div>Member since: <span style="color:#fff;" id="settingsJoined"></span></div>
         <div>Multi-user sync: <span id="sbStatusText" style="color:var(--red);">Key invalid — local only</span></div>
+        <div>AI assistant: <span id="aiStatusText" style="color:var(--text2);">⚠️ OpenAI key missing — using fallback AI.</span></div>
       </div>
     </div>
     <div id="sbKeyWarning" style="display:none;background:rgba(245,158,11,.1);border:1px solid rgba(245,158,11,.3);border-radius:12px;padding:14px;margin-bottom:14px;"><div style="font-size:11px;color:#94a3b8;margin-top:8px;">⚠️ Also make sure Supabase RLS policies allow anon SELECT on all cg_ tables</div>
@@ -1241,6 +1312,17 @@ window._sbConnected = false; // true only after a successful network check
         <button onclick="clearSbKey()" style="padding:10px 14px;border-radius:10px;border:1px solid rgba(99,102,241,.3);background:transparent;color:var(--text2);font-size:13px;cursor:pointer;">Reset</button>
       </div>
       <div id="sbKeyStatus" style="margin-top:8px;font-size:12px;color:var(--text2);"></div>
+    </div>
+
+    <div class="card prof-section" style="margin-bottom:14px;" id="aiKeyUpdateSection">
+      <h4>🤖 OpenAI Integration</h4>
+      <p style="color:var(--text2);font-size:12px;margin-bottom:10px;line-height:1.6;">Add your OpenAI API key to enable real AI responses from Rishi. This will use GPT for smarter career advice.</p>
+      <input id="aiKeyInput" type="text" placeholder="Paste sk-... key here" style="width:100%;padding:10px 14px;border-radius:10px;border:1px solid rgba(99,102,241,.25);background:rgba(15,23,42,.6);color:#fff;font-size:13px;outline:none;margin-bottom:8px;font-family:monospace;"/>
+      <div style="display:flex;gap:8px;">
+        <button onclick="applyAiKey()" style="flex:1;padding:10px;border-radius:10px;border:none;background:linear-gradient(135deg,#ec4899,#a855f7);color:#fff;font-weight:700;font-size:13px;cursor:pointer;">✅ Save AI Key</button>
+        <button onclick="clearAiKey()" style="padding:10px 14px;border-radius:10px;border:1px solid rgba(99,102,241,.3);background:transparent;color:var(--text2);font-size:13px;cursor:pointer;">Reset</button>
+      </div>
+      <div id="aiKeyStatus" style="margin-top:8px;font-size:12px;color:var(--text2);"></div>
     </div>
 
     <button class="logout-btn" onclick="logout()" style="width:100%;padding:12px;margin-bottom:20px;">🚪 Logout</button>
@@ -1361,6 +1443,25 @@ function escapeHTML(text){
   return String(text).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#x27;');
 }
 
+// Password hashing (SHA-256 client-side)
+async function hashPassword(password) {
+  try {
+    const msgBuffer = new TextEncoder().encode(password);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+  } catch (e) {
+    console.error('Hash failed, using fallback:', e);
+    // Fallback simple hash if crypto API unavailable
+    let hash = 0;
+    for (let i = 0; i < password.length; i++) {
+      hash = ((hash << 5) - hash) + password.charCodeAt(i);
+      hash = hash & hash;
+    }
+    return 'legacy_' + Math.abs(hash).toString(36);
+  }
+}
+
 let registeredUsers=safeJSON('cg_users',[]);
 let userVideos=safeJSON('cg_videos',{});
 let userConnections=safeJSON('cg_connections',{});
@@ -1412,24 +1513,26 @@ const save={
       }catch(e2){console.error('Posts save failed completely:',e2);}
     }
   },
-  stories:()=>localStorage.setItem('cg_stories',JSON.stringify(stories)),
-  notifs:()=>localStorage.setItem('cg_notifications',JSON.stringify(notifications)),
-  connections:()=>localStorage.setItem('cg_connections',JSON.stringify(userConnections)),
-  videos:()=>localStorage.setItem('cg_videos',JSON.stringify(userVideos)),
-  postint:()=>localStorage.setItem('cg_postint',JSON.stringify(postInteractions)),
-  chats:()=>localStorage.setItem('cg_chats',JSON.stringify(chatMsgsMap)),
-  work:()=>localStorage.setItem('cg_work',JSON.stringify(workExp)),
-  edu:()=>localStorage.setItem('cg_edu',JSON.stringify(education)),
-  certs:()=>localStorage.setItem('cg_certs',JSON.stringify(certs)),
-  savedjobs:()=>localStorage.setItem('cg_savedjobs',JSON.stringify(savedJobs)),
-  appliedjobs:()=>localStorage.setItem('cg_appliedjobs',JSON.stringify(appliedJobs)),
-  users:()=>localStorage.setItem('cg_users',JSON.stringify(registeredUsers)),
+  stories:()=>{try{localStorage.setItem('cg_stories',JSON.stringify(stories));}catch(e){console.error('Stories save failed:',e);}},
+  notifs:()=>{try{localStorage.setItem('cg_notifications',JSON.stringify(notifications));}catch(e){console.error('Notifications save failed:',e);}},
+  connections:()=>{try{localStorage.setItem('cg_connections',JSON.stringify(userConnections));}catch(e){console.error('Connections save failed:',e);}},
+  videos:()=>{try{localStorage.setItem('cg_videos',JSON.stringify(userVideos));}catch(e){console.error('Videos save failed:',e);}},
+  postint:()=>{try{localStorage.setItem('cg_postint',JSON.stringify(postInteractions));}catch(e){console.error('Post interactions save failed:',e);}},
+  chats:()=>{try{localStorage.setItem('cg_chats',JSON.stringify(chatMsgsMap));}catch(e){console.error('Chats save failed:',e);}},
+  work:()=>{try{localStorage.setItem('cg_work',JSON.stringify(workExp));}catch(e){console.error('Work experience save failed:',e);}},
+  edu:()=>{try{localStorage.setItem('cg_edu',JSON.stringify(education));}catch(e){console.error('Education save failed:',e);}},
+  certs:()=>{try{localStorage.setItem('cg_certs',JSON.stringify(certs));}catch(e){console.error('Certificates save failed:',e);}},
+  savedjobs:()=>{try{localStorage.setItem('cg_savedjobs',JSON.stringify(savedJobs));}catch(e){console.error('Saved jobs save failed:',e);}},
+  appliedjobs:()=>{try{localStorage.setItem('cg_appliedjobs',JSON.stringify(appliedJobs));}catch(e){console.error('Applied jobs save failed:',e);}},
+  users:()=>{try{localStorage.setItem('cg_users',JSON.stringify(registeredUsers));}catch(e){console.error('Users save failed:',e);}},
   me:()=>{
     if(!ME) return;
-    const i=registeredUsers.findIndex(u=>u.userId===ME.userId);
-    if(i>=0) registeredUsers[i]={...registeredUsers[i],...ME};
-    save.users();
-    localStorage.setItem('cg_session',JSON.stringify(ME));
+    try{
+      const i=registeredUsers.findIndex(u=>u.userId===ME.userId);
+      if(i>=0) registeredUsers[i]={...registeredUsers[i],...ME};
+      save.users();
+      localStorage.setItem('cg_session',JSON.stringify(ME));
+    }catch(e){console.error('ME save failed:',e);}
   }
 };
 
@@ -1476,7 +1579,16 @@ const RISHI_RESPONSES=[
 ];
 
 // Smart AI response based on message content
-function getSmartRishiResponse(userMessage) {
+async function getSmartRishiResponse(userMessage) {
+  if(isOpenAIKeyValid()){
+    try{
+      return await fetchOpenAIResponse(userMessage);
+    } catch(e){
+      console.warn('OpenAI request failed:', e);
+      showToast('⚠️ OpenAI failed, using fallback AI response','warning');
+    }
+  }
+
   const msg = userMessage.toLowerCase();
   
   // Job-related queries
@@ -1867,26 +1979,43 @@ async function sbDeletePost(postId){
 // CRITICAL FIX #1: COMMENTS SYSTEM (Multi-User)
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 async function sbLoadComments(postId){
-  if(!window._sbKeyValid) return [];
-  try{
-    const {data,error}=await sb.from('cg_comments')
-      .select('*')
-      .eq('post_id',postId)
-      .order('created_at',{ascending:true});
-    if(error) return [];
-    return (data||[]).map(c=>({
-      id:c.id,
-      userId:c.user_id,
-      text:c.text,
-      time:_timeAgoCompat(c.created_at)
-    }));
-  }catch(e){return [];}
+  // FIX #1: Try Supabase first, fallback to localStorage
+  if(window._sbKeyValid){
+    try{
+      const {data,error}=await sb.from('cg_comments')
+        .select('*')
+        .eq('post_id',postId)
+        .order('created_at',{ascending:true});
+      if(!error&&data&&data.length>0){
+        return data.map(c=>({
+          id:c.id,
+          userId:c.user_id,
+          text:c.text,
+          time:_timeAgoCompat(c.created_at)
+        }));
+      }
+    }catch(e){console.error('sbLoadComments error:',e);}
+  }
+  // Fallback to localStorage
+  const key='cg_comments_'+postId;
+  return safeJSON(key,[]);
 }
 
+
 async function sbSaveComment(postId,userId,text){
-  if(!window._sbKeyValid) return null;
+  const commentId='cmt_'+Date.now()+'_'+Math.random().toString(36).slice(2,8);
+  const comment={id:commentId,postId:postId,userId:userId,text:text,time:timeAgo(new Date())};
+  
+  // FIX #1: localStorage fallback when Supabase unavailable
+  if(!window._sbKeyValid){
+    const key='cg_comments_'+postId;
+    const comments=safeJSON(key,[]);
+    comments.push(comment);
+    localStorage.setItem(key,JSON.stringify(comments));
+    return commentId;
+  }
+  
   try{
-    const commentId='cmt_'+Date.now()+'_'+Math.random().toString(36).slice(2,8);
     const {error}=await sb.from('cg_comments').insert({
       id:commentId,
       post_id:postId,
@@ -1896,12 +2025,22 @@ async function sbSaveComment(postId,userId,text){
     });
     if(error){
       console.error('sbSaveComment error:',error);
-      return null;
+      // Fallback to localStorage on error
+      const key='cg_comments_'+postId;
+      const comments=safeJSON(key,[]);
+      comments.push(comment);
+      localStorage.setItem(key,JSON.stringify(comments));
+      return commentId;
     }
     return commentId;
   }catch(e){
     console.error('sbSaveComment exception:',e);
-    return null;
+    // Fallback to localStorage on exception
+    const key='cg_comments_'+postId;
+    const comments=safeJSON(key,[]);
+    comments.push(comment);
+    localStorage.setItem(key,JSON.stringify(comments));
+    return commentId;
   }
 }
 
@@ -1909,43 +2048,86 @@ async function sbSaveComment(postId,userId,text){
 // CRITICAL FIX #2: NOTIFICATIONS SYSTEM (Multi-User)
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 async function sbLoadNotifications(userId){
-  if(!window._sbKeyValid) return [];
-  try{
-    const {data,error}=await sb.from('cg_notifications')
-      .select('*')
-      .eq('user_id',userId)
-      .order('created_at',{ascending:false})
-      .limit(50);
-    if(error) return [];
-    return (data||[]).map(n=>({
-      id:n.id,
-      icon:n.icon||'🔔',
-      text:n.text,
-      time:_timeAgoCompat(n.created_at),
-      unread:n.unread,
-      postId:n.post_id,
-      fromUserId:n.from_user_id
-    }));
-  }catch(e){return [];}
+  // FIX #2: Try Supabase first, fallback to localStorage
+  if(window._sbKeyValid){
+    try{
+      const {data,error}=await sb.from('cg_notifications')
+        .select('*')
+        .eq('user_id',userId)
+        .order('created_at',{ascending:false})
+        .limit(50);
+      if(!error&&data&&data.length>0){
+        return data.map(n=>({
+          id:n.id,
+          icon:n.icon||'🔔',
+          text:n.text,
+          time:_timeAgoCompat(n.created_at),
+          read:!n.unread,
+          postId:n.post_id,
+          fromUserId:n.from_user_id
+        }));
+      }
+    }catch(e){console.error('sbLoadNotifications error:',e);}
+  }
+  // Fallback to localStorage
+  const key='cg_notifs_'+userId;
+  return safeJSON(key,[]);
 }
 
+
 async function sbSaveNotification(toUserId,fromUserId,type,text,postId=null){
-  if(!window._sbKeyValid||toUserId===fromUserId) return; // Don't notify self
+  if(toUserId===fromUserId) return; // Don't notify self
+  
+  const iconMap={like:'❤️',comment:'💬',follow:'👥',mention:'@',share:'↗️'};
+  const notif={
+    id:'notif_'+Date.now()+'_'+Math.random().toString(36).slice(2,6),
+    userId:toUserId,
+    fromUserId:fromUserId,
+    type:type,
+    text:text,
+    icon:iconMap[type]||'🔔',
+    postId:postId,
+    unread:true, // FIX: Changed from read:false to unread:true for consistency
+    time:timeAgo(new Date())
+  };
+  
+  // FIX #2: localStorage fallback when Supabase unavailable
+  if(!window._sbKeyValid){
+    const key='cg_notifs_'+toUserId;
+    const notifs=safeJSON(key,[]);
+    notifs.unshift(notif);
+    localStorage.setItem(key,JSON.stringify(notifs.slice(0,100))); // Keep last 100
+    return;
+  }
+  
   try{
-    const iconMap={like:'❤️',comment:'💬',follow:'👥',mention:'@',share:'↗️'};
     const {error}=await sb.from('cg_notifications').insert({
-      id:'notif_'+Date.now()+'_'+Math.random().toString(36).slice(2,6),
+      id:notif.id,
       user_id:toUserId,
       from_user_id:fromUserId,
       type:type,
       text:text,
-      icon:iconMap[type]||'🔔',
+      icon:notif.icon,
       post_id:postId,
       unread:true,
       created_at:new Date().toISOString()
     });
-    if(error) console.error('sbSaveNotification error:',error);
-  }catch(e){console.error('sbSaveNotification exception:',e);}
+    if(error){
+      console.error('sbSaveNotification error:',error);
+      // Fallback to localStorage on error
+      const key='cg_notifs_'+toUserId;
+      const notifs=safeJSON(key,[]);
+      notifs.unshift(notif);
+      localStorage.setItem(key,JSON.stringify(notifs.slice(0,100)));
+    }
+  }catch(e){
+    console.error('sbSaveNotification exception:',e);
+    // Fallback to localStorage on exception
+    const key='cg_notifs_'+toUserId;
+    const notifs=safeJSON(key,[]);
+    notifs.unshift(notif);
+    localStorage.setItem(key,JSON.stringify(notifs.slice(0,100)));
+  }
 }
 
 async function sbMarkNotificationRead(notifId){
@@ -2084,9 +2266,65 @@ async function sbLoadConnections(){
   }catch(e){}
 }
 
+// ── GROUPS SUPABASE SYNC ──
+async function sbLoadGroups(){
+  if(!window._sbKeyValid) return;
+  try{
+    const {data,error}=await sb.from('cg_groups').select('*');
+    if(error||!data) return;
+    
+    // Merge with local groups (keep local if not in Supabase)
+    const localGroups=safeJSON('cg_groups',[]);
+    const sbGroupIds=new Set(data.map(g=>g.id));
+    const mergedGroups=[...data.map(g=>({
+      id:g.id,
+      name:g.name,
+      icon:g.icon||'👥',
+      type:g.type||'group',
+      creatorId:g.creator_id,
+      members:Array.isArray(g.members)?g.members:[],
+      description:g.description||'',
+      createdAt:g.created_at
+    })),...localGroups.filter(g=>!sbGroupIds.has(g.id))];
+    
+    localStorage.setItem('cg_groups',JSON.stringify(mergedGroups));
+  }catch(e){
+    console.error('sbLoadGroups error:',e);
+  }
+}
+
+async function sbSaveGroup(group){
+  if(!window._sbKeyValid) return;
+  try{
+    const {error}=await sb.from('cg_groups').upsert({
+      id:group.id,
+      name:group.name,
+      icon:group.icon||'👥',
+      type:group.type||'group',
+      creator_id:group.creatorId,
+      members:group.members||[],
+      description:group.description||''
+    },{onConflict:'id'});
+    
+    if(error) console.error('sbSaveGroup error:',error);
+    else console.log('✅ Group synced:',group.name);
+  }catch(e){
+    console.error('sbSaveGroup exception:',e);
+  }
+}
+
+async function sbDeleteGroup(groupId){
+  if(!window._sbKeyValid) return;
+  try{
+    await sb.from('cg_groups').delete().eq('id',groupId);
+  }catch(e){
+    console.error('sbDeleteGroup error:',e);
+  }
+}
+
 // ── REALTIME SUBSCRIPTIONS ──
 function startRealtimeSync(){
-  if(!window._sbKeyValid) return; // Skip realtime if key invalid
+  if(!window._sbConnected) return; // Skip realtime if not connected
   sb.channel('cg_posts_rt').on('postgres_changes',
     {event:'INSERT',schema:'public',table:'cg_posts'},
     (payload)=>{
@@ -2204,6 +2442,7 @@ function startRealtimeSync(){
 }
 
 function subscribeToRoom(roomId){
+  if(!window._sbConnected) return;
   // Unsubscribe previous
   if(window._rtMsgChannel) sb.removeChannel(window._rtMsgChannel);
   window._rtMsgChannel=sb.channel('room_'+roomId)
@@ -2330,8 +2569,18 @@ function checkSession(){
   const saved=JSON.parse(localStorage.getItem('cg_session')||'null');
   if(saved&&saved.userId){
     // Re-fetch latest user data (in case profile was updated)
-    const u=registeredUsers.find(u=>u.userId===saved.userId)||saved;
-    if(u){ME=u;localStorage.setItem('cg_session',JSON.stringify(ME));showApp();return;}
+    let u=registeredUsers.find(u=>u.userId===saved.userId)||saved;
+    if(u){
+      ME=u;
+      if(!registeredUsers.find(x=>x.userId===ME.userId)){
+        registeredUsers.unshift(ME);
+        save.users();
+        rebuildUserMap();
+      }
+      localStorage.setItem('cg_session',JSON.stringify(ME));
+      showApp();
+      return;
+    }
   }
   // No session — show login
   const ls=document.getElementById('login-screen');
@@ -2345,6 +2594,11 @@ function showApp(){
   document.getElementById('bottombar').style.display='flex';
   updateTopAvatar();
   showScreen('home');
+  
+  // FIX: Load groups from Supabase (multi-device sync)
+  if(window._sbKeyValid){
+    sbLoadGroups().catch(()=>{});
+  }
   
   // FIX: Load notifications from Supabase (multi-user)
   if(ME&&window._sbKeyValid){
@@ -2433,6 +2687,71 @@ function clearSbKey(){
   setTimeout(()=>location.reload(),800);
 }
 
+async function fetchOpenAIResponse(userMessage){
+  const openaiKey = _getOpenAIKey();
+  if(!openaiKey) throw new Error('OpenAI API key not configured');
+  const payload = {
+    model: 'gpt-4o-mini',
+    messages: [
+      {role: 'system', content: 'You are Rishi AI, a professional career coach for CareerGram. Answer politely, provide actionable career advice, and use bullets when helpful.'},
+      {role: 'user', content: userMessage}
+    ],
+    temperature: 0.7,
+    max_tokens: 350
+  };
+  const response = await fetch('https://api.openai.com/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${openaiKey}`
+    },
+    body: JSON.stringify(payload)
+  });
+  if(!response.ok){
+    const text = await response.text();
+    throw new Error(`OpenAI error ${response.status}: ${text}`);
+  }
+  const data = await response.json();
+  if(!data?.choices?.[0]?.message?.content) throw new Error('OpenAI response missing content');
+  return data.choices[0].message.content.trim();
+}
+
+function applyAiKey(){
+  const input=document.getElementById('aiKeyInput');
+  const status=document.getElementById('aiKeyStatus');
+  const key=(input?.value||'').trim();
+  if(!key){status.textContent='⚠️ Please paste your OpenAI API key.';status.style.color='#f87171';return;}
+  if(!key.startsWith('sk-')){status.textContent='⚠️ Invalid key format. Should start with sk-';status.style.color='#f87171';return;}
+  status.textContent='🔄 Testing OpenAI key...';status.style.color='#94a3b8';
+  fetch('https://api.openai.com/v1/models',{headers:{Authorization:`Bearer ${key}`}})
+    .then(async res=>{
+      if(!res.ok){
+        const text = await res.text();
+        status.textContent='❌ Key rejected or network error';
+        status.style.color='#f87171';
+        console.warn('OpenAI key test failed', text);
+        return;
+      }
+      localStorage.setItem('cg_ai_key_override',key);
+      status.textContent='✅ Key saved! Reloading to apply...';
+      status.style.color='#22c55e';
+      setTimeout(()=>location.reload(),1200);
+    })
+    .catch(e=>{
+      status.textContent='⚠️ Network error. Key saved — will try on reload.';
+      status.style.color='#f59e0b';
+      localStorage.setItem('cg_ai_key_override',key);
+      setTimeout(()=>location.reload(),1500);
+    });
+}
+
+function clearAiKey(){
+  localStorage.removeItem('cg_ai_key_override');
+  const status=document.getElementById('aiKeyStatus');
+  if(status){status.textContent='AI key reset. Reloading...';status.style.color='#94a3b8';}
+  setTimeout(()=>location.reload(),800);
+}
+
 // Sign In
 document.getElementById('signInBtn').addEventListener('click',async ()=>{
   const id=document.getElementById('loginId').value.trim();
@@ -2443,8 +2762,23 @@ document.getElementById('signInBtn').addEventListener('click',async ()=>{
   btn.textContent='Signing in...';btn.disabled=true;
   err.classList.remove('show');
 
+  // Hash the password for comparison
+  const hashedPw = await hashPassword(pw);
+
   // STEP 1: Check localStorage first (instant, works offline)
-  const localUser=registeredUsers.find(u=>u.userId===id&&u.password===pw);
+  // Try hashed password first, then fallback to plaintext for backward compatibility
+  let localUser = registeredUsers.find(u=>u.userId===id&&u.password===hashedPw);
+  if(!localUser) {
+    // Fallback: check legacy plaintext password
+    localUser = registeredUsers.find(u=>u.userId===id&&u.password===pw);
+    if(localUser) {
+      // Upgrade to hashed password
+      localUser.password = hashedPw;
+      save.users();
+      sbSaveUser(localUser).catch(()=>{});
+    }
+  }
+  
   if(localUser){
     ME=localUser;
     localStorage.setItem('cg_session',JSON.stringify(ME));
@@ -2459,30 +2793,41 @@ document.getElementById('signInBtn').addEventListener('click',async ()=>{
   // STEP 2: Try Supabase (for accounts on other devices)
   try{
     const {data,error}=await sb.from('cg_users').select('*').eq('user_id',id).maybeSingle();
-    if(!error&&data&&data.password===pw){
-      const u={
-        id:data.id,userId:data.user_id,password:data.password,
-        name:data.name,email:data.email||'',
-        accountType:data.account_type||'jobseeker',
-        role:data.role||'',city:data.city||'',
-        avatar:data.avatar||data.name?.slice(0,2).toUpperCase()||'??',
-        color:data.color||'#6366f1',bio:data.bio||'',
-        skills:Array.isArray(data.skills)?data.skills:[],
-        company:data.company||'',experience:data.experience||'Fresher',
-        online:true,profilePic:data.profile_pic||''
-      };
-      const li=registeredUsers.findIndex(x=>x.userId===u.userId);
-      if(li>=0) registeredUsers[li]=u; else registeredUsers.unshift(u);
-      save.users();rebuildUserMap();
-      ME=u;localStorage.setItem('cg_session',JSON.stringify(ME));
-      btn.textContent='Sign In';btn.disabled=false;
-      showApp();
-      showToast('Welcome back, '+ME.name+'! 👋','success');
-      return;
-    } else if(!error&&data&&data.password!==pw){
-      btn.textContent='Sign In';btn.disabled=false;
-      err.classList.add('show');err.textContent='⚠️ Wrong password.';
-      return;
+    if(!error&&data){
+      // Try hashed password first, then plaintext fallback
+      const passwordMatch = data.password===hashedPw || data.password===pw;
+      
+      if(passwordMatch){
+        const u={
+          id:data.id,userId:data.user_id,password:hashedPw, // Always store hashed
+          name:data.name,email:data.email||'',
+          accountType:data.account_type||'jobseeker',
+          role:data.role||'',city:data.city||'',
+          avatar:data.avatar||data.name?.slice(0,2).toUpperCase()||'??',
+          color:data.color||'#6366f1',bio:data.bio||'',
+          skills:Array.isArray(data.skills)?data.skills:[],
+          company:data.company||'',experience:data.experience||'Fresher',
+          online:true,profilePic:data.profile_pic||''
+        };
+        
+        // Upgrade password if it was plaintext in DB
+        if(data.password===pw) {
+          sbSaveUser(u).catch(()=>{});
+        }
+        
+        const li=registeredUsers.findIndex(x=>x.userId===u.userId);
+        if(li>=0) registeredUsers[li]=u; else registeredUsers.unshift(u);
+        save.users();rebuildUserMap();
+        ME=u;localStorage.setItem('cg_session',JSON.stringify(ME));
+        btn.textContent='Sign In';btn.disabled=false;
+        showApp();
+        showToast('Welcome back, '+ME.name+'! 👋','success');
+        return;
+      } else {
+        btn.textContent='Sign In';btn.disabled=false;
+        err.classList.add('show');err.textContent='⚠️ Wrong password.';
+        return;
+      }
     }
   }catch(e){console.warn('Supabase login error:',e.message);}
 
@@ -2583,19 +2928,29 @@ document.getElementById('verifyOtpBtn').addEventListener('click',()=>{
   document.getElementById('profileSetupCard').style.display='block';
 });
 
-document.getElementById('completeSignupBtn').addEventListener('click',()=>{
+document.getElementById('completeSignupBtn').addEventListener('click',async ()=>{
   const userId=document.getElementById('signupUserId').value.trim();
   const pwd=document.getElementById('signupPwd').value.trim();
   const role=document.getElementById('signupRole').value.trim();
   const city=document.getElementById('signupCity').value.trim();
   const err=document.getElementById('profileErr');
+  const btn=document.getElementById('completeSignupBtn');
+  
   if(!userId||!pwd||!role||!city){err.classList.add('show');err.textContent='⚠️ Please fill all fields.';return;}
   if(pwd.length<8){err.classList.add('show');err.textContent='⚠️ Password needs 8+ chars.';return;}
   if(!/\d/.test(pwd)||!/[!@#$%^&*]/.test(pwd)){err.classList.add('show');err.textContent='⚠️ Password needs a number & special char.';return;}
   if(registeredUsers.find(u=>u.userId===userId)){err.classList.add('show');err.textContent='⚠️ User ID taken.';return;}
+  
+  btn.textContent='Creating account...';
+  btn.disabled=true;
+  
+  // Hash password before storing
+  const hashedPwd = await hashPassword(pwd);
+  
   const at=ACCOUNT_TYPES[state.signupData.accType];
   const newU={
-    id:'u_'+Date.now(),userId,password:pwd,name:state.signupData.name,email:state.signupData.email,
+    id:'u_'+Date.now(),userId,password:hashedPwd, // Store hashed password
+    name:state.signupData.name,email:state.signupData.email,
     accountType:state.signupData.accType,role,city,
     avatar:state.signupData.name.split(' ').map(w=>w[0]).join('').slice(0,2).toUpperCase(),
     color:at.color,bio:'',skills:[],company:'',experience:'Fresher',connections:0,online:true,
@@ -2605,7 +2960,11 @@ document.getElementById('completeSignupBtn').addEventListener('click',()=>{
   sbSaveUser(newU); // Sync to Supabase — visible to all users
   rebuildUserMap();
   userConnections[userId]={followers:[],following:[]};save.connections();
+  
+  btn.textContent='Complete Signup 🎉';
+  btn.disabled=false;
   err.classList.remove('show');
+  
   // Reset forms
   ['signupName','signupEmail','signupUserId','signupPwd','signupRole','signupCity'].forEach(id=>document.getElementById(id).value='');
   document.getElementById('signupAccType').value='';
@@ -2613,7 +2972,9 @@ document.getElementById('completeSignupBtn').addEventListener('click',()=>{
   document.getElementById('profileSetupCard').style.display='none';
   document.getElementById('loginCard').style.display='block';
   document.getElementById('loginId').value=userId;
-  document.getElementById('loginPw').value=pwd;
+  // Don't autofill password - user will need to re-enter hashed version
+  document.getElementById('loginPw').value='';
+  
   // Add welcome notifications with examples
   const _wn=[
     {id:'n_welcome',icon:'🎉',text:'Welcome to CareerGram! Complete your profile to get started.',time:'Just now',unread:true},
@@ -2731,7 +3092,7 @@ function renderStories(){
             <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:34px;">${emoji}</div>
             <div style="position:absolute;top:5px;left:50%;transform:translateX(-50%);width:22px;height:22px;border-radius:50%;background:${bgColor};border:2px solid #fff;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:800;color:#fff;">${u.avatar?.slice(0,2)||'C'}</div>
             <div style="position:absolute;bottom:0;left:0;right:0;padding:3px 4px 5px;background:linear-gradient(0deg,rgba(0,0,0,.8),transparent);text-align:center;">
-              <div style="font-size:8px;color:#fff;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${(latest.caption||'Story').slice(0,10)}</div>
+              <div style="font-size:8px;color:#fff;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${escapeHTML((latest.caption||'Story').slice(0,10))}</div>
             </div>
             <div style="position:absolute;top:4px;right:4px;background:linear-gradient(135deg,#ec4899,#a855f7);color:#fff;font-size:7px;font-weight:700;border-radius:6px;padding:1px 4px;">✨</div>
           </div>
@@ -3119,16 +3480,18 @@ async function renderFeed(){
         if(!cu) return '';
         const cp=localStorage.getItem(`cg_pic_${cu.userId}`);
         const cav=cp?`<div class="av" style="width:28px;height:28px;overflow:hidden;"><img src="${cp}" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"/></div>`:avHTML(cu.color,cu.avatar,28,false,cu.isAI,cu.accountType);
-        // XSS FIX: Escape HTML in comment text
+        // XSS FIX: Escape HTML in comment text and name
         const safeText=escapeHTML(cm.text);
-        return `<div class="comment-row">${cav}<div class="cbubble"><span class="cname" data-uid="${cm.userId}">${cu.name}</span><span class="ctime"> • ${cm.time}</span><div class="ctext">${safeText}</div></div></div>`;
+        const safeName=escapeHTML(cu.name);
+        return `<div class="comment-row">${cav}<div class="cbubble"><span class="cname" data-uid="${cm.userId}">${safeName}</span><span class="ctime"> • ${cm.time}</span><div class="ctext">${safeText}</div></div></div>`;
       }).join('');
       commsHTML=`<div class="comments-panel open"><div id="cmts-${post.id}">${rows}</div><div class="comment-input-row">${avHTML(ME.color,ME.avatar,28,true)}<input class="cmt-inp" data-pid="${post.id}" placeholder="Write a comment..."/><button class="cmt-send" data-pid="${post.id}">Send</button></div></div>`;
     }
     const _resolvedImg=post.image&&post.image.startsWith("__local__")?localStorage.getItem("cg_post_img_"+post.image.slice(9)):post.image;
     const postImgHTML=_resolvedImg?`<div style="margin:8px 16px;border-radius:12px;overflow:hidden;max-height:400px;cursor:pointer;" class="post-img-wrap" data-pid="${post.id}"><img src="${_resolvedImg}" style="width:100%;max-height:400px;object-fit:cover;display:block;" class="post-img" data-pid="${post.id}"/></div>`:'';
     const safePostContent=escapeHTML(post.content); // XSS protection for post content
-    c.innerHTML+=`<div class="card post fade-in" data-pinned="${_pinnedIds.includes(post.id)?'true':'false'}">${post.isJob?'<div class="job-tag">💼 JOB POST</div>':''}<div class="post-head">${avEl}<div class="info"><span class="name" data-uid="${post.userId}">${a.name}<span class="badge ${at.badge}">${at.name}</span></span><div class="meta">${a.role||''}${a.company?' at '+a.company:''} • ${post.time}</div></div>${isMe?`<div style="display:flex;gap:4px;"><button class="post-pin-btn" data-pid="${post.id}" style="background:none;border:none;color:${isPinned(post.id)?'var(--accent2)':' var(--text2)'};cursor:pointer;font-size:12px;padding:2px 6px;border-radius:6px;" title="Pin">📌</button><button class="post-edit-btn" data-pid="${post.id}" style="background:none;border:none;color:var(--text2);cursor:pointer;font-size:12px;padding:2px 6px;border-radius:6px;" title="Edit">✏️</button><button class="post-del-btn" data-pid="${post.id}" style="background:none;border:none;color:var(--text2);cursor:pointer;font-size:12px;padding:2px 6px;border-radius:6px;" title="Delete">🗑️</button></div>`:''}</div>${post.content?`<div class="post-body">${safePostContent}</div>`:''}${postImgHTML}<div class="post-stats" data-pid="${post.id}"><span>👍 ${post.likes} likes</span><span>${coms.length} comments • 👁 ${post.views||0} views</span></div><div class="post-actions"><button class="pab${isLiked?' active':''}" data-act="like" data-pid="${post.id}">${isLiked?'❤️':'🤍'} Like</button><button class="pab" data-act="comment" data-pid="${post.id}">💬 Comment</button><button class="pab" data-act="share" data-pid="${post.id}">🔗 Share</button><button class="pab${isSaved?' active':''}" data-act="save" data-pid="${post.id}">${isSaved?'🔖':'🏷️'} Save</button>${post.isJob?'<button class="pab apply-btn" data-act="apply" data-pid="'+post.id+'">📋 Apply</button>':''}</div>${commsHTML}</div>`;
+    const safeAuthorName=escapeHTML(a.name); // XSS protection for author name
+    c.innerHTML+=`<div class="card post fade-in" data-pinned="${_pinnedIds.includes(post.id)?'true':'false'}">${post.isJob?'<div class="job-tag">💼 JOB POST</div>':''}<div class="post-head">${avEl}<div class="info"><span class="name" data-uid="${post.userId}">${safeAuthorName}<span class="badge ${at.badge}">${at.name}</span></span><div class="meta">${a.role||''}${a.company?' at '+a.company:''} • ${post.time}</div></div>${isMe?`<div style="display:flex;gap:4px;"><button class="post-pin-btn" data-pid="${post.id}" style="background:none;border:none;color:${isPinned(post.id)?'var(--accent2)':' var(--text2)'};cursor:pointer;font-size:12px;padding:2px 6px;border-radius:6px;" title="Pin">📌</button><button class="post-edit-btn" data-pid="${post.id}" style="background:none;border:none;color:var(--text2);cursor:pointer;font-size:12px;padding:2px 6px;border-radius:6px;" title="Edit">✏️</button><button class="post-del-btn" data-pid="${post.id}" style="background:none;border:none;color:var(--text2);cursor:pointer;font-size:12px;padding:2px 6px;border-radius:6px;" title="Delete">🗑️</button></div>`:''}</div>${post.content?`<div class="post-body">${safePostContent}</div>`:''}${postImgHTML}<div class="post-stats" data-pid="${post.id}"><span>👍 ${post.likes} likes</span><span>${coms.length} comments • 👁 ${post.views||0} views</span></div><div class="post-actions"><button class="pab${isLiked?' active':''}" data-act="like" data-pid="${post.id}">${isLiked?'❤️':'🤍'} Like</button><button class="pab" data-act="comment" data-pid="${post.id}">💬 Comment</button><button class="pab" data-act="share" data-pid="${post.id}">🔗 Share</button><button class="pab${isSaved?' active':''}" data-act="save" data-pid="${post.id}">${isSaved?'🔖':'🏷️'} Save</button>${post.isJob?'<button class="pab apply-btn" data-act="apply" data-pid="'+post.id+'">📋 Apply</button>':''}</div>${commsHTML}</div>`;
   }
 }
 
@@ -3216,11 +3579,9 @@ document.addEventListener('click',e=>{
             );
           }
           
-          // Reload comments from Supabase and re-render
+          // FIX #11: Use commentCache instead of postInteractions[postId]
           sbLoadComments(pid).then(comments=>{
-            if(!postInteractions[pid]) postInteractions[pid]={likes:[],comments:comments};
-            else postInteractions[pid].comments=comments;
-            save.postint();
+            commentCache[pid]=comments;
             renderFeed();
             
             // Scroll to comment
@@ -3789,11 +4150,16 @@ document.getElementById('uploadVideoBtn').addEventListener('click',async()=>{
   const storagePath=`${uid}/${vidId}_${_selVidFile.name.replace(/[^a-z0-9.]/gi,'_')}`;
   let videoUrl=await uploadFileToStorage(_selVidFile,'videos',storagePath);
   clearInterval(fakeIv);
-  // If Supabase Storage fails, use in-memory objectURL (session only)
+  // FIX #4: Store as base64 in localStorage when cloud upload fails (survives page refresh)
   const isCloud=!!videoUrl;
   if(!isCloud){
-    videoUrl=URL.createObjectURL(_selVidFile);
-    showToast('⚠️ Cloud upload failed — video visible this session only','error');
+    // Convert to base64 for localStorage persistence
+    const reader=new FileReader();
+    videoUrl=await new Promise((resolve)=>{
+      reader.onload=()=>resolve(reader.result);
+      reader.readAsDataURL(_selVidFile);
+    });
+    showToast('⚠️ Cloud upload failed — video stored locally','warning');
   }
   pb.style.width='90%';
   const newVid={
@@ -3809,11 +4175,8 @@ document.getElementById('uploadVideoBtn').addEventListener('click',async()=>{
   if(!userVideos[uid]) userVideos[uid]=[];
   userVideos[uid].unshift(newVid);
   // Save per-user key to avoid serializing all users
-  localStorage.setItem('cg_vids_'+uid,JSON.stringify(userVideos[uid].map(v=>({...v,videoData:v.isCloud?v.videoData:''}))));
-  userVideos[uid]=JSON.parse(localStorage.getItem('cg_vids_'+uid));
-  // Re-attach objectURL for session (cloud videos already have URL)
-  if(!isCloud) userVideos[uid][0].videoData=videoUrl;
-  sbSaveVideo(uid,{...newVid,videoData:isCloud?videoUrl:''});
+  // FIX #4: Save videoData for both cloud and local (base64) videos
+  localStorage.setItem('cg_vids_'+uid,JSON.stringify(userVideos[uid]));
   pb.style.width='100%';
   setTimeout(()=>{
     ['vidTitle','vidDesc'].forEach(id=>document.getElementById(id).value='');
@@ -3987,7 +4350,8 @@ function peopleRowHTML(m){
   const isF=userConnections[ME?.userId]?.following?.includes(m.userId)||false;
   const pic=localStorage.getItem(`cg_pic_${m.userId}`);
   const avEl=pic?`<div class="av" style="width:40px;height:40px;overflow:hidden;cursor:pointer;" data-uid="${m.userId}"><img src="${pic}" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"/></div>`:avHTML(m.color,m.avatar,40,m.online,m.isAI,m.accountType).replace('<div class="av','<div class="av" data-uid="'+m.userId+'"');
-  return `<div class="people-row" data-uid="${m.userId}">${avEl}<div class="info"><div class="name">${m.name}<span class="badge ${at.badge}">${at.name}</span></div><div class="sub">${m.role||''}${m.company?' • '+m.company:''}</div></div><button class="conn-btn${isF?' connected':''}" data-uid="${m.userId}" onclick="event.stopPropagation();toggleFollow('${m.userId}')">${isF?'Following':'+ Follow'}</button></div>`;
+  const safeName=escapeHTML(m.name); // XSS protection
+  return `<div class="people-row" data-uid="${m.userId}">${avEl}<div class="info"><div class="name">${safeName}<span class="badge ${at.badge}">${at.name}</span></div><div class="sub">${m.role||''}${m.company?' • '+m.company:''}</div></div><button class="conn-btn${isF?' connected':''}" data-uid="${m.userId}" onclick="event.stopPropagation();toggleFollow('${m.userId}')">${isF?'Following':'+ Follow'}</button></div>`;
 }
 document.getElementById('searchInput').addEventListener('input',e=>renderSearch(e.target.value.trim()));
 document.addEventListener('click',e=>{
@@ -4214,20 +4578,30 @@ function renderChatList(){
   }
 
   // CHATS TAB — FIX BUG 10: show Rishi first, then only users with real conversation history
+  if(!ME){
+    el.innerHTML = `<div style="text-align:center;padding:60px 20px;">
+      <div style="font-size:48px;margin-bottom:12px;">💬</div>
+      <div style="color:#fff;font-size:15px;font-weight:700;margin-bottom:8px;">Please sign in to view chats</div>
+      <div style="color:var(--text2);font-size:13px;">Your chat history is stored locally and in the cloud once you sign in.</div>
+    </div>`;
+    return;
+  }
   const items=[];
   // Always show Rishi at top
-  const rishiKey=`cg_chat_${ME?.userId}_rishi`;
+  const rishiKey=`cg_chat_${ME.userId}_rishi`;
   const rishiMsgs=JSON.parse(localStorage.getItem(rishiKey)||'[]');
-  const rishiLast=rishiMsgs.length?rishiMsgs[rishiMsgs.length-1].text.slice(0,50)+'…':'I can help with job searches, skill recs & more!';
+  const lastRishiMsg=rishiMsgs[rishiMsgs.length-1]||{};
+  const rishiLast = rishiMsgs.length ? (lastRishiMsg.text?.slice(0,50) || (lastRishiMsg.image ? '📷 Image' : 'I can help with job searches, skill recs & more!')) : 'I can help with job searches, skill recs & more!';
   // Show unread only if never chatted before
   const rishiUnread=chatUnread['rishi']!==undefined?chatUnread['rishi']:(rishiMsgs.length===0?1:0);
   items.push({id:'rishi',name:'Rishi AI',avatar:'🤖',color:'#ec4899',online:true,
-    lastMsg:rishiLast,time:rishiMsgs.length?rishiMsgs[rishiMsgs.length-1].time:'Now',
+    lastMsg:rishiLast,time:rishiMsgs.length?lastRishiMsg.time:'Now',
     unread:rishiUnread,isAI:true,accountType:'creator'});
 
   // Show registered users — only those with existing chat history first, rest below
   const withHistory=[];
   const withoutHistory=[];
+  const knownUserIds=new Set(['rishi']);
   registeredUsers.filter(m=>m.userId!==ME?.userId&&!getDeletedIds().includes(m.userId)).forEach((m,i)=>{
     const key=`cg_chat_${ME?.userId}_${m.userId}`;
     const msgs=JSON.parse(localStorage.getItem(key)||'[]');
@@ -4236,11 +4610,42 @@ function renderChatList(){
       time:msgs.length?msgs[msgs.length-1].time:'',
       unread:chatUnread[m.userId]??(msgs.length?0:0),
       isAI:false,accountType:m.accountType};
+    knownUserIds.add(m.userId);
     if(msgs.length) withHistory.push(obj);
     else withoutHistory.push(obj);
   });
+
+  // Add any local chat partners that are not in registeredUsers
+  Object.keys(localStorage).forEach(key=>{
+    if(!key.startsWith(`cg_chat_${ME?.userId}_`)) return;
+    const partnerId=key.replace(`cg_chat_${ME?.userId}_`,'');
+    if(!partnerId||knownUserIds.has(partnerId)||partnerId===ME?.userId) return;
+    const msgs=JSON.parse(localStorage.getItem(key)||'[]');
+    if(!msgs.length) return;
+    knownUserIds.add(partnerId);
+    withHistory.push({
+      id:partnerId,
+      name:partnerId==='rishi'?'Rishi AI':partnerId,
+      avatar:partnerId==='rishi'?'🤖':'?'
+      ,color:'#6366f1',online:false,
+      lastMsg:msgs[msgs.length-1].text?.slice(0,50)||'📷 Image',
+      time:msgs[msgs.length-1].time||'Now',
+      unread:chatUnread[partnerId]??0,
+      isAI:partnerId==='rishi',accountType:'jobseeker'
+    });
+  });
+
   // Only show users with chat history + first 5 without (to avoid clutter)
   items.push(...withHistory,...withoutHistory.slice(0,5));
+
+  if(items.length===0){
+    el.innerHTML=`<div style="text-align:center;padding:60px 20px;">
+      <div style="font-size:48px;margin-bottom:12px;">💬</div>
+      <div style="color:#fff;font-size:15px;font-weight:700;margin-bottom:8px;">No chats yet</div>
+      <div style="color:var(--text2);font-size:13px;">Open a conversation from a profile or start chatting with Rishi AI.</div>
+    </div>`;
+    return;
+  }
 
   el.innerHTML=items.map(it=>`<div class="chat-item${it.isAI?' ai-item':''}" data-cid="${it.id}" data-isuser="true">
 ${avHTML(it.color,it.avatar,44,it.online,it.isAI,it.accountType)}
@@ -4270,13 +4675,18 @@ document.addEventListener('click',e=>{
 
 // FIX BUG 4/9: Group chat handler
 function openGroupChat(groupId,groupName,groupIcon){
+  showScreen('chat');
   state.currentChat=groupId;
   const hdr=document.getElementById('chatHeader');
-  hdr.className='chat-header';
-  document.getElementById('chatAv').innerHTML=groupIcon||'👥';
-  document.getElementById('chatAv').style.background='linear-gradient(135deg,#6366f1,#818cf8)';
-  document.getElementById('chatAv').dataset.uid='';
-  document.getElementById('chatInfo').innerHTML=`<div class="ch-name">${groupName}</div><div class="ch-status" style="color:var(--text2);">👥 Group Chat</div>`;
+  if(hdr) hdr.className='chat-header';
+  const chatAv=document.getElementById('chatAv');
+  if(chatAv){
+    chatAv.innerHTML=groupIcon||'👥';
+    chatAv.style.background='linear-gradient(135deg,#6366f1,#818cf8)';
+    chatAv.dataset.uid='';
+  }
+  const chatInfo=document.getElementById('chatInfo');
+  if(chatInfo) chatInfo.innerHTML=`<div class="ch-name">${groupName}</div><div class="ch-status" style="color:var(--text2);">👥 Group Chat</div>`;
   const key=`cg_grp_${ME.userId}_${groupId}`;
   let msgs=JSON.parse(localStorage.getItem(key)||'[]');
   if(!msgs.length){
@@ -4290,33 +4700,54 @@ function openGroupChat(groupId,groupName,groupIcon){
 }
 
 function openChat(userId){
-  state.currentChat=userId;
-  const m=getMember(userId);
-  if(!m){
-    showToast('❌ User not found','error');
+  if(!ME){
+    showToast('Please sign in to open chat','error');
     return;
   }
-  const isAI=m.isAI||false;
+  showScreen('chat');
+  state.currentChat=userId;
+  let m=getMember(userId);
+  if(!m){
+    if(userId==='rishi'){
+      m=RISHI;
+    } else {
+      m={userId, name:userId, avatar:'?', color:'#6366f1', online:false, accountType:'jobseeker'};
+    }
+  }
+  const isAI=m.isAI||userId==='rishi';
   window._chatIsGroup=false;
   const hdr=document.getElementById('chatHeader');
-  hdr.className=isAI?'chat-header ai-header':'chat-header';
+  if(hdr) hdr.className=isAI?'chat-header ai-header':'chat-header';
   const pic=!isAI&&localStorage.getItem(`cg_pic_${m.userId}`);
   document.getElementById('chatAv').innerHTML=pic?`<img src="${pic}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;"/>`:isAI?'🤖':(m.avatar+(m.online?`<div class="dot" style="width:11px;height:11px;"></div>`:''));
   document.getElementById('chatAv').style.background=isAI?'linear-gradient(135deg,#ec4899,#a855f7)':`linear-gradient(135deg,${m.color},${m.color}cc)`;
   document.getElementById('chatAv').dataset.uid=userId;
-  document.getElementById('chatInfo').innerHTML=`<div class="ch-name${isAI?' ai-name':''}">${m.name}</div><div class="ch-status" style="color:${m.online?'var(--green)':'var(--text2)'};">${isAI?'🤖 AI Assistant — Always Active':m.online?'● Online':'Last seen recently'}</div>`;
+  const safeChatName=escapeHTML(m.name); // XSS protection
+  document.getElementById('chatInfo').innerHTML=`<div class="ch-name${isAI?' ai-name':''}">${safeChatName}</div><div class="ch-status" style="color:${m.online?'var(--green)':'var(--text2)'};">${isAI?'🤖 AI Assistant — Always Active':m.online?'● Online':'Last seen recently'}</div>`;
   
   const key=`cg_chat_${ME.userId}_${userId}`;
-  let msgs=JSON.parse(localStorage.getItem(key)||'[]');
+  let msgs=[];
+  try{
+    msgs=JSON.parse(localStorage.getItem(key)||'[]');
+    if(!Array.isArray(msgs)) msgs=[];
+  }catch(e){
+    console.warn('Chat data parse failed:',key,e);
+    msgs=[];
+  }
   
   // For real users (not AI), merge messages from both directions
   if(!isAI && userId !== ME.userId) {
     const otherKey = `cg_chat_${userId}_${ME.userId}`;
     const otherMsgs = JSON.parse(localStorage.getItem(otherKey) || '[]');
     
-    // Merge and deduplicate messages from both directions using msgId
-    const allMsgs = [...msgs, ...otherMsgs];
-    const uniqueMsgs = [];
+    // FIX #6: Only merge if not already merged
+    const lastMerge=localStorage.getItem(otherKey+'_merged');
+    const shouldMerge=!lastMerge||otherMsgs.length>0;
+    
+    if(shouldMerge&&otherMsgs.length>0){
+      // Merge and deduplicate messages from both directions using msgId
+      const allMsgs = [...msgs, ...otherMsgs];
+      const uniqueMsgs = [];
     const seenIds = new Set();
     
     allMsgs.forEach(msg => {
@@ -4336,13 +4767,18 @@ function openChat(userId){
     
     // Save merged+deduped messages back
     localStorage.setItem(key, JSON.stringify(msgs));
-    // Clear the other-direction key to avoid future double-merging
-    localStorage.removeItem(otherKey);
+    // FIX #6: Don't delete otherKey - keep for backup/history reconstruction
+    // Mark it as merged instead
+    if(otherMsgs.length>0){
+      localStorage.setItem(otherKey+'_merged',Date.now().toString());
+    }
+   }
   }
   
   if(!msgs.length&&isAI){msgs=[{from:'rishi',text:RISHI_RESPONSES[0],time:tsNow()}];localStorage.setItem(key,JSON.stringify(msgs));}
   // FIX BUG 7: clear unread badge
   chatUnread[userId]=0;
+  renderChatList();
   window._chatMsgs=msgs;window._chatKey=key;window._chatUserId=userId;window._chatIsAI=isAI;
   // Load Supabase messages for this room (real-time)
   const roomId=[ME.userId,userId].sort().join('_');
@@ -4378,7 +4814,8 @@ function showTypingIndicator(){
 function removeTypingIndicator(){const t=document.getElementById('typingIndicator');if(t) t.remove();}
 
 // FIX BUG 5: Image messages use data-img attribute instead of inline base64 onclick
-function renderChatMsgs(msgs){
+// FIX #5: Accept optional isAI parameter (currently unused but called with it)
+function renderChatMsgs(msgs, isAI){
   const el=document.getElementById('chatMsgs');
   el.innerHTML=msgs.map((msg,idx)=>{
     // isMe: message sent by current logged-in user
@@ -4387,7 +4824,7 @@ function renderChatMsgs(msgs){
     if(isSystem) return `<div style="text-align:center;padding:6px 0;"><span style="background:rgba(99,102,241,.15);border-radius:20px;padding:4px 14px;font-size:11px;color:var(--text2);">${msg.text}</span></div>`;
     // For 'me' sender, always use ME's avatar; for others use their user data
     const u=isMe?ME:getMember(msg.from);
-    const isAIMsg=(!isMe)&&(u?.isAI||msg.from==='rishi');
+    const isAIMsg=(!isMe)&&(u?.isAI||msg.from==='rishi'||isAI); // FIX #5: Use isAI parameter
     const pic=!isAIMsg&&u&&!isMe&&localStorage.getItem(`cg_pic_${u?.userId||''}`);
     const avEl=isAIMsg
       ?avHTML('#ec4899','🤖',28,false,true,'creator')
@@ -4467,11 +4904,12 @@ function sendMsg(){
   if(window._chatIsAI){
     // FIX BUG 8: show typing indicator
     showTypingIndicator();
-    setTimeout(()=>{
+    const smartResponsePromise = getSmartRishiResponse(txt);
+    setTimeout(async ()=>{
       removeTypingIndicator();
       // FIX BUG 6: only append if still same conversation
       if(window._chatKey!==capturedKey) return;
-      const smartResponse = getSmartRishiResponse(txt);
+      const smartResponse = await smartResponsePromise;
       capturedMsgs.push({from:capturedUserId,text:smartResponse,time:tsNow()});
       localStorage.setItem(capturedKey,JSON.stringify(capturedMsgs));
       renderChatMsgs(capturedMsgs);
@@ -4524,10 +4962,30 @@ function createGroup(){
   if(!name){showToast('Group name enter చేయండి','error');return;}
   const members=[ME.userId];
   document.querySelectorAll('.grp-member-chk:checked').forEach(chk=>members.push(chk.dataset.uid));
-  const groups=JSON.parse(localStorage.getItem('cg_groups')||'[]');
-  const newGroup={id:'grp_'+Date.now(),name,icon:window._selGrpIcon||'👥',members,createdBy:ME.userId,time:'Now',lastMsg:''};
+  const groups=safeJSON('cg_groups',[]);
+  const newGroup={
+    id:'grp_'+Date.now(),
+    name,
+    icon:window._selGrpIcon||'👥',
+    members,
+    creatorId:ME.userId, // Consistent naming with schema
+    type:'group',
+    description:'',
+    createdAt:new Date().toISOString(),
+    time:'Now',
+    lastMsg:''
+  };
   groups.unshift(newGroup);
-  localStorage.setItem('cg_groups',JSON.stringify(groups));
+  try{
+    localStorage.setItem('cg_groups',JSON.stringify(groups));
+  }catch(e){
+    console.error('Group save failed:',e);
+    showToast('⚠️ Could not save group locally','warning');
+  }
+  
+  // Sync to Supabase
+  sbSaveGroup(newGroup);
+  
   document.getElementById('createGroupModal')?.remove();
   showToast('✅ Group created!','success');
   renderChatList();
@@ -4575,7 +5033,8 @@ function openFullProfile(userId){
   profAv.style.background=m.isAI?'linear-gradient(135deg,#ec4899,#a855f7)':`linear-gradient(135deg,${m.color},${m.color}cc)`;
   profAv.innerHTML=pic&&!m.isAI?`<img src="${pic}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;"/>`+(m.online?`<div class="dot" style="width:26px;height:26px;"></div>`:''):(m.isAI?'🤖':m.avatar)+(m.online&&!m.isAI?`<div class="dot" style="width:26px;height:26px;"></div>`:'');
   const _ppEdit=document.getElementById('profAv')?.parentElement?.querySelector('.pp-edit');if(_ppEdit) _ppEdit.style.display=isMe?'flex':'none';
-  document.getElementById('profName').innerHTML=`${m.name}<span class="badge ${at.badge}">${at.name}</span>`;
+  const safeProfName=escapeHTML(m.name); // XSS protection
+  document.getElementById('profName').innerHTML=`${safeProfName}<span class="badge ${at.badge}">${at.name}</span>`;
   document.getElementById('profRole').textContent=m.role||'';
   document.getElementById('profMeta').textContent=`${m.company||''}${m.city?' • '+m.city:''}${m.experience?' • '+m.experience:''}`;
   document.getElementById('profBio').innerHTML=(m.bio||'')+(isMe?` <span style="color:var(--accent2);cursor:pointer;font-size:12px;" onclick="openEditModal()">✏️ Edit</span>`:'');
@@ -4711,7 +5170,7 @@ document.addEventListener('change',e=>{
     r.onload=ev=>{
       localStorage.setItem(`cg_resume_${ME.userId}`,ev.target.result);
       localStorage.setItem(`cg_resume_name_${ME.userId}`,f.name);
-      ME.hasResume=true;
+      // FIX #8: Remove unused ME.hasResume flag
       save.me();
       showToast(`✅ Resume "${f.name}" uploaded!`,'success');
       openFullProfile(ME.userId);
@@ -4822,7 +5281,8 @@ function openMiniProfile(userId){
   const mpAv=document.getElementById('mpAv');
   mpAv.style.background=m.isAI?'linear-gradient(135deg,#ec4899,#a855f7)':`linear-gradient(135deg,${m.color},${m.color}cc)`;
   mpAv.innerHTML=pic&&!m.isAI?`<img src="${pic}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;"/>`+(m.online?`<div class="dot" style="width:21px;height:21px;"></div>`:''):((m.isAI?'🤖':m.avatar)+(m.online&&!m.isAI?`<div class="dot" style="width:21px;height:21px;"></div>`:''));
-  document.getElementById('mpName').innerHTML=`${m.name}<span class="badge ${at.badge}">${at.name}</span>`;
+  const safeMpName=escapeHTML(m.name); // XSS protection
+  document.getElementById('mpName').innerHTML=`${safeMpName}<span class="badge ${at.badge}">${at.name}</span>`;
   document.getElementById('mpRole').textContent=m.role||'';
   document.getElementById('mpMeta').textContent=`${m.company||''}${m.city?' • '+m.city:''}`;
   document.getElementById('mpBio').textContent=m.bio||'';
@@ -4903,9 +5363,23 @@ function updateSettingsUI(){
     else if(window._sbKeyValid){sbStatus.textContent='🔄 Connecting to Supabase...';sbStatus.style.color='#f59e0b';}
     else{sbStatus.textContent='❌ Key invalid — local only (accounts not shared across devices)';sbStatus.style.color='var(--red)';}
   }
-  // Pre-fill key input if override exists
+  // OpenAI key status
+  const aiStatus=document.getElementById('aiStatusText');
+  const hasAiOverride=!!localStorage.getItem('cg_ai_key_override');
+  if(aiStatus){
+    if(window._aiKeyValid){aiStatus.textContent='✅ OpenAI configured — Rishi uses real AI';aiStatus.style.color='var(--green)';}
+    else if(hasAiOverride){aiStatus.textContent='⚠️ OpenAI key saved but invalid/misconfigured';aiStatus.style.color='#f59e0b';}
+    else{aiStatus.textContent='⚠️ OpenAI key missing — using fallback AI.';aiStatus.style.color='#f59e0b';}
+  }
+  // Accent selector active state
+  document.querySelectorAll('.theme-swatch').forEach(btn=>{
+    btn.classList.toggle('active',btn.dataset.theme===accentTheme);
+  });
+  // Pre-fill key inputs if override exists
   const sbKeyInput=document.getElementById('sbKeyInput');
   if(sbKeyInput&&hasOverride) sbKeyInput.value=localStorage.getItem('cg_sb_key_override');
+  const aiKeyInput=document.getElementById('aiKeyInput');
+  if(aiKeyInput&&hasAiOverride) aiKeyInput.value=localStorage.getItem('cg_ai_key_override');
   if(document.getElementById('settingsUserId')) document.getElementById('settingsUserId').textContent=ME.userId;
   if(document.getElementById('settingsAccType')) document.getElementById('settingsAccType').textContent=ME.accountType;
   if(document.getElementById('settingsJoined')) document.getElementById('settingsJoined').textContent=ME.createdAt?new Date(ME.createdAt).toLocaleDateString():'Unknown';
@@ -5082,11 +5556,40 @@ document.addEventListener('keydown',e=>{
 });
 
 // Theme
-let isLight=localStorage.getItem('cg_theme')==='light';
+const THEME_ACCENT_KEY = 'cg_theme_accent';
+const THEME_PALETTES = {
+  blue:{accent:'#6366f1',accent2:'#818cf8'},
+  violet:{accent:'#7c3aed',accent2:'#a78bfa'},
+  pink:{accent:'#ec4899',accent2:'#f472b6'},
+  teal:{accent:'#14b8a6',accent2:'#2dd4bf'},
+  emerald:{accent:'#22c55e',accent2:'#4ade80'},
+  amber:{accent:'#f59e0b',accent2:'#fbbf24'},
+  red:{accent:'#ef4444',accent2:'#fb7185'},
+  indigo:{accent:'#4338ca',accent2:'#6366f1'},
+  cyan:{accent:'#06b6d4',accent2:'#22d3ee'},
+  orange:{accent:'#f97316',accent2:'#fb923c'}
+};
+let isLight = localStorage.getItem('cg_theme') === 'light';
+let accentTheme = localStorage.getItem(THEME_ACCENT_KEY) || 'blue';
 function applyTheme(){
   document.body.classList.toggle('light',isLight);
   document.getElementById('themeToggle').classList.toggle('light',isLight);
   document.querySelector('.toggle-thumb').textContent=isLight?'☀️':'🌙';
+  const palette = THEME_PALETTES[accentTheme] || THEME_PALETTES.blue;
+  document.documentElement.style.setProperty('--accent', palette.accent);
+  document.documentElement.style.setProperty('--accent2', palette.accent2);
+  document.documentElement.style.setProperty('--accent3', palette.accent2);
+  document.querySelectorAll('.theme-swatch').forEach(btn=>{
+    btn.classList.toggle('active',btn.dataset.theme===accentTheme);
+  });
+}
+function setThemeAccent(themeId){
+  if(!THEME_PALETTES[themeId]) return;
+  accentTheme = themeId;
+  localStorage.setItem(THEME_ACCENT_KEY,themeId);
+  applyTheme();
+  updateSettingsUI();
+  showToast('✨ '+themeId.charAt(0).toUpperCase()+themeId.slice(1)+' accent selected','success');
 }
 applyTheme();
 document.getElementById('themeToggle').addEventListener('click',()=>{isLight=!isLight;localStorage.setItem('cg_theme',isLight?'light':'dark');applyTheme();showToast(isLight?'☀️ Light mode':'🌙 Dark mode','success');});
@@ -5129,10 +5632,45 @@ function startAutoRefresh(){
 }
 
 // =============================================
+// GLOBAL ERROR HANDLER (Crash Recovery)
+// =============================================
+window.onerror = function(msg, url, lineNo, columnNo, error) {
+  console.error('Global error caught:', { msg, url, lineNo, columnNo, error });
+  showToast('⚠️ Something went wrong. App is recovering...', 'error');
+  
+  // Attempt to keep app functional
+  try {
+    if (typeof renderFeed === 'function') {
+      setTimeout(() => {
+        try {
+          renderFeed();
+        } catch (e) {
+          console.error('Feed render failed during recovery:', e);
+        }
+      }, 100);
+    }
+  } catch (e) {
+    console.error('Recovery failed:', e);
+  }
+  
+  return true; // Prevent default browser error handling
+};
+
+window.onunhandledrejection = function(event) {
+  console.error('Unhandled promise rejection:', event.reason);
+  showToast('⚠️ Operation failed. Please try again.', 'warning');
+  return true;
+};
+
+// =============================================
 // INIT
 // =============================================
 document.addEventListener('DOMContentLoaded',async ()=>{
   rebuildUserMap();
+  
+  // FIX #15: Cleanup old localStorage entries on startup
+  cleanupLocalStorage();
+  
   // Wait for Supabase connection (max 3s)
   for(let i=0;i<15;i++){
     if(window._sbConnected||window._sbKeyValid===false) break;
@@ -5145,6 +5683,30 @@ document.addEventListener('DOMContentLoaded',async ()=>{
   // Start listening for incoming calls
   subscribeToIncomingCalls();
 });
+
+// FIX #15: Periodic localStorage cleanup to prevent bloat
+function cleanupLocalStorage(){
+  try{
+    // Trim deleted posts to last 500
+    const dp=JSON.parse(localStorage.getItem('cg_deleted_posts')||'[]');
+    if(dp.length>500){
+      localStorage.setItem('cg_deleted_posts',JSON.stringify(dp.slice(-500)));
+    }
+    // Trim deleted users to last 200
+    const du=JSON.parse(localStorage.getItem('cg_deleted_users')||'[]');
+    if(du.length>200){
+      localStorage.setItem('cg_deleted_users',JSON.stringify(du.slice(-200)));
+    }
+    // Remove old chat merge markers (older than 7 days)
+    const weekAgo=Date.now()-(7*24*60*60*1000);
+    Object.keys(localStorage).forEach(key=>{
+      if(key.includes('_merged')){
+        const ts=parseInt(localStorage.getItem(key)||'0');
+        if(ts&&ts<weekAgo) localStorage.removeItem(key);
+      }
+    });
+  }catch(e){console.warn('Cleanup error:',e);}
+}
 </script>
 
 <script>
@@ -5175,6 +5737,12 @@ function showCallButtons(isAI){
 async function startCall(type){
   if(!ME||!window._chatUserId||window._chatIsAI){showToast('Open a chat first','error');return;}
   if(_pc){showToast('Already in a call','error');return;}
+  
+  // FIX #3: WebRTC calls require Supabase for signaling
+  if(!window._sbKeyValid){
+    showToast('❌ Calls require cloud backend (Supabase) for signaling','error');
+    return;
+  }
 
   // MUTUAL FOLLOW CHECK — both must follow each other
   const calleeId=window._chatUserId;
@@ -5190,7 +5758,6 @@ async function startCall(type){
   _callType=type;
   _isCaller=true;
   _callId='call_'+Date.now()+'_'+Math.random().toString(36).slice(2,6);
-  const calleeId=window._chatUserId;
 
   try{
     // Get media
@@ -5562,4 +6129,3 @@ window.addEventListener('appinstalled',()=>{
 
 </body>
 </html>
-
